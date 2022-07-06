@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* 320 * 440 */
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.card {
+    max-width: 320px;
+    height: 1320px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card__item1 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Bright-orange);
+}
+.card__item2 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Dark-cyan);
+}
+.card__item3 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Very-dark-cyan);
+}
+.card__item-container {
+    margin:45px 45px 0px 45px;
+}
+.item-container__title {
+    font-family: 'Big Shoulders Display', cursive;
+    color:var(--Very-light-gray);
+    margin-top:40px;
+    font-size:2.8em;
+    text-transform: uppercase;
+}
+.item-container__text {
+    color:var(--Transparent-white);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+.item-container__button1 {
+    width: 145px;
+    height: 50px;
+    border:none;
+    border-radius: 1.8em;
+    color: var(--Bright-orange);
+    font-size: 1em;
+}
+.item-container__button2 {
+    width: 145px;
+    height: 50px;
+    border:none;
+    border-radius: 1.8em;
+    color: var(--Dark-cyan);
+    font-size: 1em;
+}
+.item-container__button3 {
+    width: 145px;
+    height: 50px;
+    border:none;
+    border-radius: 1.8em;
+    color: var(--Very-dark-cyan);
+    font-size: 1em;
+}
+.btn:hover {
+    background-color: transparent;
+    color: var(--Very-light-gray);
+    border:2px solid var(--Very-light-gray);
+    cursor: pointer;
+}
+@media (min-width: 620px) {
+    .card {
+        margin-top: 170px;
+        flex-direction: row;
+        max-width: 920px;
+        height: 505px;
+    }
+    .item-container__text {
+        word-spacing: 1px;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-bottom: 70px;
+    }
+}
